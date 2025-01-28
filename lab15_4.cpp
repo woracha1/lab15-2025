@@ -19,3 +19,15 @@ int main(){
 }
 
 //Do not modify source code above this line
+void shuffle(int &a,int &b,int &c,int &d){
+    int money[4] = {50,100,500,1000} ;
+    a = money[rand() % 4 ] ;
+    b = money[rand() % 4 ] ;
+    while(b==a) b = money[rand() % 4 ] ;
+    c = money[rand() % 4 ] ;
+    while(c==b || c==a) c = money[rand() % 4 ] ;
+    d = money[rand() % 4 ] ;
+    while(d==c || d==a || d==b) d = money[rand() % 4 ] ;
+    
+    
+}
